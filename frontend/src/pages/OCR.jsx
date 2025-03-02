@@ -171,7 +171,7 @@ const OCR = () => {
         uidStatus:"Back UID Not Found",
         apiResponse: JSON.stringify(formattedResponse, null, 2),
       };
-      const response = await axios.post("http://localhost:5000/api/parsed-data", parsedData);
+      const response = await axios.post("https://machine-task-1-main.onrender.com/api/parsed-data", parsedData);
       console.log("Data saved successfully:", response.data);
       alert("Data parsed successfully!");
     } catch (error) {
